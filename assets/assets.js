@@ -11,7 +11,7 @@ import figma from "./figma.png";
 import git from "./git.png";
 import mongodb from "./mongodb.png";
 import right_arrow_white from "./right-arrow-white.png";
-import logo from "./SUNSHINE.svg";
+import logo from "./logo.svg";
 import logo_dark from "./logo_dark.svg";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
@@ -80,24 +80,19 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Linqto Web",
-    description: "react",
+    title: "ChitChat",
+    description: "next.js, typescript, react, tailwind css",
     bgImage: "/work-1.png",
   },
   {
-    title: "Linqto Mobile",
-    description: "react native",
+    title: "Uber Clone",
+    description: "react native, expo",
     bgImage: "/work-2.png",
   },
   {
-    title: "Linqto CRM",
-    description: "react",
+    title: "UpSend",
+    description: "next.js, typescript, react, tailwind css",
     bgImage: "/work-3.png",
-  },
-  {
-    title: "Chatter",
-    description: "react",
-    bgImage: "/work-4.png",
   },
 ];
 
