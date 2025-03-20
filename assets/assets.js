@@ -139,7 +139,7 @@ export const infoList = [
     iconDark: assets.edu_icon_dark,
     title: "Education",
     description:
-      "Bachelors of Science; Computer Science @ The University of the Pacific",
+      "Bachelors of Science; Computer Science @ California State University, Stanislaus",
   },
   {
     icon: assets.project_icon,
