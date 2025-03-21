@@ -9,7 +9,11 @@ const Footer = () => {
         <Image src={assets.logo} alt="logo" className="w-36 mx-auto mb-2" />
 
         <div className="flex items-center gap-2 mx-auto w-max">
-          <Image src={assets.mail_icon} alt="mail" className="w-6" />
+          <Image
+            src={assets.mail_icon}
+            alt="mail"
+            className="w-6 dark:invert"
+          />
           <a
             href="mailto:sunshinemoua21@gmail.com?subject=Hello"
             target="_blank"

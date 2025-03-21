@@ -66,8 +66,8 @@ const Header = () => {
           my resume
           <Image
             src={assets.download_icon}
-            alt="download_icon"
-            className="w-4"
+            alt="download"
+            className="w-4 dark:invert"
           />
         </motion.a>
       </div>
