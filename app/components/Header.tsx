@@ -55,6 +55,8 @@ const Header = () => {
         <motion.a
           href="/sunshine-moua-resume.pdf"
           download="Sunshine-Moua-Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
           viewport={{ once: true }}
           initial={{ y: 30, opacity: 0 }}

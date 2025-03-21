@@ -33,6 +33,8 @@ const Work = () => {
 
       <Link
         href="https://github.com/sunshinemoua"
+        target="_blank"
+        rel="noopener noreferrer"
         className="w-max flex items-center justify-center gap-2 text-gray-700 dark:text-white border-[0.5px] border-gray-700 dark:border-white/50 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover dark:hover:bg-gray-800/30 duration-300"
       >
         Show more →
