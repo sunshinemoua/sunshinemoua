@@ -17,9 +17,11 @@ const Header = () => {
           className="rounded-full w-32"
         />
       </motion.div>
-      <motion.h3 className="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Markazi">
-        Hello there, my name is Sunshine!
+      <motion.h3 className="flex items-center gap-2 text-xl md:text-2xl mb-3 font-DMSerif">
+        Hello there, my name is Sunshine
+        <Image src={assets.sun_icon} alt="sun-icon" className="w-10" />
       </motion.h3>
+
       <motion.h1
         viewport={{ once: true }}
         initial={{ y: -20, opacity: 0 }}

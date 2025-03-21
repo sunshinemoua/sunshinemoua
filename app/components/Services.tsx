@@ -37,8 +37,8 @@ const Services = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center mx-auto max-w-2xl mt-5 mb-12 font-Ovo"
       >
-        With my skills and expertise, I am able to provide a range of services
-        to help you achieve your goals.
+        With my skills and expertise, I can offer a variety of services to
+        support you in achieving your goals.
       </motion.p>
 
       <motion.div

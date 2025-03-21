@@ -81,7 +81,7 @@ export const assets = {
 export const workData = [
   {
     title: "ChitChat",
-    description: "next.js, typescript, react, tailwind css",
+    description: "next.js, typescript, react, tailwindcss",
     bgImage: "/work-1.png",
   },
   {
@@ -91,7 +91,7 @@ export const workData = [
   },
   {
     title: "UpSend",
-    description: "next.js, typescript, react, tailwind css",
+    description: "next.js, typescript, react, tailwindcss",
     bgImage: "/work-3.png",
   },
 ];
