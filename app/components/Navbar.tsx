@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { assets } from "@/assets/assets";
 import { useEffect, useRef, useState } from "react";
-
+import { ModeToggle } from "./ModeToggle";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const sideMenuRef = useRef<HTMLUListElement>(null);
@@ -31,17 +31,11 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-11/12 fixed top-0 right-0 -z-10 translate-y-[-80%]">
-        <Image
-          src={assets.header_bg_color}
-          alt="header_bg_color"
-          className="w-full h-full object-cover"
-        />
-      </div>
+      <div className="w-11/12 fixed top-0 right-0 -z-10 translate-y-[-80%]"></div>
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
           isScrolled
-            ? "bg-white bg-opacity-50 background-blur-lg shadow-sm"
+            ? "bg-white dark:bg-black bg-opacity-50 dark:bg-opacity-50 background-blur-lg shadow-sm"
             : ""
         }`}
       >
@@ -54,43 +48,43 @@ const Navbar = () => {
         </Link>
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
-            isScrolled ? "" : "bg-white shadow-sm bg-opacity-50"
+            isScrolled
+              ? ""
+              : "bg-white dark:bg-black shadow-sm bg-opacity-50 dark:bg-opacity-50"
           }`}
         >
           <li>
-            <Link className="font-Ovo" href="#top">
+            <Link className="font-Markazi dark:text-white" href="#top">
               Home
             </Link>
           </li>
           <li>
-            <Link className="font-Ovo" href="#about">
+            <Link className="font-Markazi dark:text-white" href="#about">
               About
             </Link>
           </li>
           <li>
-            <Link className="font-Ovo" href="#services">
+            <Link className="font-Markazi dark:text-white" href="#services">
               Services
             </Link>
           </li>
           <li>
-            <Link className="font-Ovo" href="#work">
+            <Link className="font-Markazi dark:text-white" href="#work">
               Projects
             </Link>
           </li>
           <li>
-            <Link className="font-Ovo" href="#contact">
+            <Link className="font-Markazi dark:text-white" href="#contact">
               Contact Me
             </Link>
           </li>
         </ul>
 
         <div className="flex items-center gap-4">
-          <button className="cursor-pointer">
-            <Image src={assets.sun_icon} alt="moon_icon" className="w-6" />
-          </button>
+          <ModeToggle />
           <Link
             href="#contact"
-            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full "
+            className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 dark:border-white/50 rounded-full dark:text-white"
           >
             Contact
             <Image src={assets.arrow_icon} alt="contact" className="w-3" />
@@ -99,52 +93,68 @@ const Navbar = () => {
             className="block md:hidden ml-3 cursor-pointer"
             onClick={handleOpenMenu}
           >
-            <Image src={assets.menu_black} alt="menu_black" className="w-6" />
+            <Image
+              src={assets.menu_black}
+              alt="menu_black"
+              className="w-6 dark:invert"
+            />
           </button>
         </div>
 
         {/* Mobile Menu */}
         <ul
           ref={sideMenuRef}
-          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500"
+          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 dark:bg-black transition duration-500"
         >
           <div className="absolute right-6 top-6">
             <Image
               onClick={handleCloseMenu}
               src={assets.close_black}
               alt="close_black"
-              className="w-5 cursor-pointer"
+              className="w-5 cursor-pointer dark:invert"
             />
           </div>
 
           <li>
-            <Link onClick={handleCloseMenu} className="font-Ovo" href="#top">
+            <Link
+              onClick={handleCloseMenu}
+              className="font-Markazi dark:text-white"
+              href="#top"
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link onClick={handleCloseMenu} className="font-Ovo" href="#about">
+            <Link
+              onClick={handleCloseMenu}
+              className="font-Markazi dark:text-white"
+              href="#about"
+            >
               About
             </Link>
           </li>
           <li>
             <Link
               onClick={handleCloseMenu}
-              className="font-Ovo"
+              className="font-Markazi dark:text-white"
               href="#services"
             >
               Services
             </Link>
           </li>
           <li>
-            <Link onClick={handleCloseMenu} className="font-Ovo" href="#work">
+            <Link
+              onClick={handleCloseMenu}
+              className="font-Markazi dark:text-white"
+              href="#work"
+            >
               Projects
             </Link>
           </li>
           <li>
             <Link
               onClick={handleCloseMenu}
-              className="font-Ovo"
+              className="font-Markazi dark:text-white"
               href="#contact"
             >
               Contact Me

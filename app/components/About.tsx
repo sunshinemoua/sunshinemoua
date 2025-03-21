@@ -16,7 +16,7 @@ const About = () => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className="text-center mb-2 text-lg font-Ovo"
+        className="text-center mb-2 text-lg font-Markazi"
       >
         Introduction
       </motion.h4>
@@ -25,7 +25,7 @@ const About = () => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-center text-5xl font-Ovo"
+        className="text-center text-5xl font-Markazi"
       >
         About me
       </motion.h2>
@@ -56,11 +56,13 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="flex-1"
         >
-          <p className="mb-10 max-w-2xl font-Ovo">
+          <p className="mb-10 max-w-2xl font-Markazi">
             I am a frontend engineer with 3+ years of experience, skilled in
             TypeScript, JavaScript, React, Next.js, and Node.js. I thrive in
             dynamic environments, embrace new challenges, and am passionate
-            about building solutions that benefit the community.
+            about building solutions that benefit the community. I am also
+            willing to relocate to opportunities that align with my expertise
+            and passion.
           </p>
           <motion.ul
             initial={{ opacity: 0 }}
@@ -76,8 +78,8 @@ const About = () => {
                 className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 transition-all duration-300 hover:shadow-black"
               >
                 <Image src={icon} alt={title} className="w-7 mt-3" />
-                <h3 className="my-4 font-semibold text-gray-700">{title}</h3>
-                <p className="text-gray-600 text-sm">{description}</p>
+                <h3 className="my-4 font-semibold text-gray-500">{title}</h3>
+                <p className="text-gray-400 text-sm">{description}</p>
               </motion.li>
             ))}
           </motion.ul>
@@ -87,7 +89,7 @@ const About = () => {
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.3, delay: 0.5 }}
-            className="my-6 text-gray-700 font-Ovo"
+            className="my-6 text-gray-500 font-Markazi"
           >
             Some of the tools I use include:
           </motion.h4>

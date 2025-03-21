@@ -46,14 +46,14 @@ const Contact = () => {
             type="text"
             placeholder="Enter your name"
             required
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90 dark:text-white"
+            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-gray-800/30 dark:border-white/90 dark:text-white"
             name="name"
           />
           <input
             type="email"
             placeholder="Enter your email"
             required
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90 dark:text-white"
+            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-gray-800/30 dark:border-white/90 dark:text-white"
             name="email"
           />
         </div>
@@ -61,7 +61,7 @@ const Contact = () => {
           placeholder="Enter your message"
           required
           rows={6}
-          className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90 dark:text-white mb-6"
+          className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-gray-800/30 dark:border-white/90 dark:text-white mb-6"
           name="message"
         />
         <button

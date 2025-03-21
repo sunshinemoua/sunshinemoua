@@ -17,22 +17,22 @@ const Header = () => {
           className="rounded-full w-32"
         />
       </motion.div>
-      <motion.h3 className="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo">
-        Hello there! I&apos;m Sunshine
-        <Image src={assets.hand_icon} alt="hand_icon" className="w-6" />
+      <motion.h3 className="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Markazi">
+        Hello there, my name is Sunshine!
       </motion.h3>
       <motion.h1
         viewport={{ once: true }}
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className="text-3xl md:text-6xl lg:text-[66px] font-Ovo"
+        className="text-3xl md:text-6xl lg:text-[66px] font-Markazi"
       >
         frontend software engineer based in Sacramento.
       </motion.h1>
       <p>
-        With 3 years of experience as a software engineer, I&apos;m ready to
-        bring my skills and expertise to the right role.
+        With 3 years of experience as a software engineer, I&apos;m excited to
+        bring my skills and passion to a team where I can build impactful
+        solutions for the community!
       </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <motion.a
