@@ -1,5 +1,4 @@
 import { workData } from "@/assets/assets";
-import Image from "next/image";
 import Link from "next/link";
 
 const Work = () => {
