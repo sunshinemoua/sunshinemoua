@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { DM_Serif_Text } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./components/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 
 const dmSerifText = DM_Serif_Text({
   weight: "400",
@@ -42,6 +43,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
