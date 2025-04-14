@@ -32,7 +32,7 @@ const Header = () => {
         frontend software engineer based in Sacramento.
       </motion.h1>
       <p>
-        With 3 years of experience as a software engineer, I&apos;m excited to
+        With 5 years of experience as a software engineer, I&apos;m excited to
         bring my skills and passion to a team where I can build impactful
         solutions for the community!
       </p>

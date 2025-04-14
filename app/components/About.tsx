@@ -57,7 +57,7 @@ const About = () => {
           className="flex-1"
         >
           <p className="mb-10 max-w-2xl font-Markazi">
-            I am a frontend engineer with 3+ years of experience, skilled in
+            I am a frontend engineer with 5+ years of experience, skilled in
             TypeScript, JavaScript, React, Next.js, and Node.js. I thrive in
             dynamic environments, embrace new challenges, and am passionate
             about building solutions that benefit the community. I am also
